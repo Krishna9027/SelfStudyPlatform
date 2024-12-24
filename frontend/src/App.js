@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar.js';
 import Home from './Home/Home.js';
+import StudyRoom from './components/StudyRoom.js';
 
 
 // const Home = () => <div>Home Page</div>;
@@ -16,13 +17,16 @@ const App = () => {
     <Router>
       <Navbar />
       <div className="content">
+        <>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/study-room" element={<StudyRoom />} />
-          <Route path="/mywork" element={<MyWork />} />
+          {
+           <Route path="/study-room" element={<StudyRoom />} />
+          /*<Route path="/mywork" element={<MyWork />} />
           <Route path="/daily-tasks" element={<DailyTasks />} />
           <Route path="/profile" element={<Profile />} /> */}
         </Routes>
+        </>
       </div>
     </Router>
   );

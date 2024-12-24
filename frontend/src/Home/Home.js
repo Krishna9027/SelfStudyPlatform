@@ -1,5 +1,5 @@
 import React from 'react'
-import  '/components/Banner.css';
+import  '../components/Banner.css';
 
 
 export default function Home() {
